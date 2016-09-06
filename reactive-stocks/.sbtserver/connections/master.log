@@ -1,0 +1,12 @@
+New log file opened at Tue Sep 06 18:47:37 EDT 2016 by 7897@lawn-143-215-118-204.lawn.gatech.edu
+Taking next connection to: 63237
+New client attempting to connect on port: 63238-63237
+  Address = /143.215.118.204:63237
+This client on port 63238 has uuid 91283880-0eba-46d9-bb95-c63ed1779c9c configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-91283880-0eba-46d9-bb95-c63ed1779c9c
+Taking next connection to: 63237
+Server socket closed java.net.SocketException: Socket closed
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 7897@lawn-143-215-118-204.lawn.gatech.edu logs at Tue Sep 06 18:48:29 EDT 2016, goodbye.
