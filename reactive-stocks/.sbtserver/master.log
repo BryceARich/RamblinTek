@@ -1,5 +1,5 @@
-New log file opened at Wed Oct 19 15:57:19 EDT 2016 by 8727@lawn-143-215-119-2.lawn.gatech.edu
-jvm 8727@lawn-143-215-119-2.lawn.gatech.edu
+New log file opened at Thu Oct 20 16:30:36 EDT 2016 by 9646@lawn-143-215-121-73.lawn.gatech.edu
+jvm 9646@lawn-143-215-121-73.lawn.gatech.edu
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.20-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/project, returning: (reactive-stocks-build)
 Loading project definition from /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@5b469036, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@4a39e20c, check cycles: false
 [warn] Multiple resolvers having different access mechanism configured with same name 'typesafe-releases'. To avoid conflict, Remove duplicate project resolvers (`resolvers`) or rename publishing resolver (`publishTo`).
 Multiple resolvers having different access mechanism configured with same name 'typesafe-releases'. To avoid conflict, Remove duplicate project resolvers (`resolvers`) or rename publishing resolver (`publishTo`).
 
@@ -69,43 +69,9 @@ Set current project to reactive-stocks (in build file:/Users/brycerich/Desktop/F
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@38caefea, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
-
-Read from stdout: Compiling 1 Java source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@1fb42b5a directly...
-Java compilation took 2.691703977 s
-Java analysis took 0.446810898 s
-Java compile + analysis took 3.178091513 s
-New invalidations:
-	Set()
-Initial set of included nodes: Set()
-Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
-All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 8 s, completed Oct 19, 2016 3:58:49 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@29b09047, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b8968c1, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -122,18 +88,64 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 1 s, completed Oct 19, 2016 3:58:50 PM
+Total time: 1 s, completed Oct 20, 2016 4:30:44 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@19ccb7ac, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 3:58:50 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e9d157d, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 4:30:44 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> test
-Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@6170d49e, check cycles: false
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@789a6a06, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed Oct 20, 2016 4:30:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@68d754dd, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 4:30:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@583adadf, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 4:30:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@2ba95961, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 4:30:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@3835af4c, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 4:30:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@10fdb6ba, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -155,145 +167,12 @@ Copy resource mappings:
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
 Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	
-Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
-Framework implementation 'org.specs.runner.SpecsFramework' not present.
-Framework implementation 'org.scalatest.tools.Framework' not present.
-Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@430ce1b4))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@342cbd95), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@1089ebe5))
-Forking tests - parallelism = false
-Create a single-thread test executor
-Runner for org.specs2.runner.Specs2Framework produced 2 initial tasks for 2 tests.
-  Running TaskDef(actors.StockActorSpec, sbt.ForkMain$SubclassFingerscan@6bda71bf, false, [SuiteSelector])
-Read from stdout: StockActorSpec
-StockActorSpec
-Read from stdout: 
-
-Read from stdout: A StockActor should
-A StockActor should
-Read from stdout: + notify watchers when a new stock is received
-  + notify watchers when a new stock is received
-Read from stdout: + add a watcher and send a StockHistory message to the user when receiving WatchStock message
-  + add a watcher and send a StockHistory message to the user when receiving WatchStock message
-Read from stdout: A StocksActor should
-A StocksActor should
-Read from stdout: + a WatchStock message should send a StockHistory message to the user
-  + a WatchStock message should send a StockHistory message to the user
-Read from stdout: 
-
-Read from stdout: Total for specification StockActorSpec
-Total for specification StockActorSpec
-Read from stdout: Finished in 563 ms
-Read from stdout: 3 examples, 0 failure, 0 error
-Finished in 563 ms
-3 examples, 0 failure, 0 error
-Read from stdout: 
-
-    Produced 0 nested tasks and 3 events.
-  Running TaskDef(actors.UserActorSpec, sbt.ForkMain$SubclassFingerscan@42c393fe, false, [SuiteSelector])
-Read from stdout: UserActorSpec
-UserActorSpec
-Read from stdout: 
-
-[info] a.e.s.Slf4jLogger - Slf4jLogger started
-[info] a.a.LocalActorRef - Message [actors.FetchLatest$] from Actor[akka://application/user/$a/Sensor3#161490318] to Actor[akka://application/user/$a/Sensor3#161490318] was not delivered. [1] dead letters encountered. This logging can be turned off or adjusted with configuration settings 'akka.log-dead-letters' and 'akka.log-dead-letters-during-shutdown'.
-Read from stdout: UserActor should
-UserActor should
-Read from stdout: + send a stock when receiving a StockUpdate message
-  + send a stock when receiving a StockUpdate message
-[info] a.e.s.Slf4jLogger - Slf4jLogger started
-Read from stdout: + send the stock history when receiving a StockHistory message
-  + send the stock history when receiving a StockHistory message
-Read from stdout: 
-
-Read from stdout: Total for specification UserActorSpec
-Total for specification UserActorSpec
-Read from stdout: Finished in 9 seconds, 432 ms
-Read from stdout: 2 examples, 0 failure, 0 error
-Finished in 9 seconds, 432 ms
-2 examples, 0 failure, 0 error
-Read from stdout: 
-
-    Produced 0 nested tasks and 2 events.
-Runner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.
-  Running TaskDef(FakeStockQuoteTest, sbt.ForkMain$AnnotatedFingerscan@437ea9ba, false, [SuiteSelector])
-Test run started
-Test FakeStockQuoteTest.fakeStockPriceShouldBePlusOrMinusFivePercentOfTheOldPrice started
-Test FakeStockQuoteTest.fakeStockPriceShouldBePlusOrMinusFivePercentOfTheOldPrice finished, took 0.03 sec
-Test run finished: 0 failed, 0 ignored, 1 total, 0.034s
-    Produced 0 nested tasks and 1 events.
-Summary for specs2 not available.
-Summary for JUnit not available.
-Read from stdout: Passed: Total 6, Failed 0, Errors 0, Passed 6
-Passed: Total 6, Failed 0, Errors 0, Passed 6
-Passed tests:
-	actors.UserActorSpec
-	FakeStockQuoteTest
-	actors.StockActorSpec
-Total time: 35 s, completed Oct 19, 2016 3:59:26 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@341c8fbf, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 1 s, completed Oct 19, 2016 3:59:26 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@6fe0f07a, check cycles: false
-Total time: 1 s, completed Oct 19, 2016 3:59:48 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@1c239201, check cycles: false
-Total time: 1 s, completed Oct 19, 2016 4:00:01 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@c2b9a3c, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 4:00:09 PM
+Total time: 1 s, completed Oct 20, 2016 4:31:00 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@11628b73, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@9f10340, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -314,58 +193,176 @@ Copy resource mappings:
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
-Total time: 2 s, completed Oct 19, 2016 4:01:05 PM
+Read from stdout: CoffeeScript compiling on 1 source(s)
+CoffeeScript compiling on 1 source(s)
+Total time: 9 s, completed Oct 20, 2016 4:44:56 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@2476541c, check cycles: false
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@e51078f, check cycles: false
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
+	modified: Set()
 Removed products: Set()
 External API changes: API Changes: Set()
 Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
+Initial directly invalidated sources: Set()
 
 Sources indirectly invalidated by:
 	product: Set()
 	binary dep: Set()
 	external source: Set()
-All initially invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/UserActor.java)
+All initially invalidated sources: Set()
 
-Read from stdout: Compiling 1 Java source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
-Compiling 1 Java source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
-Attempting to call com.sun.tools.javac.api.JavacTool@aeebc80 directly...
-Java compilation took 0.503587683 s
-Java analysis took 0.030128006 s
-Java compile + analysis took 0.538968574 s
+Copy resource mappings: 
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
+Read from stdout: CoffeeScript compiling on 1 source(s)
+CoffeeScript compiling on 1 source(s)
+Total time: 4 s, completed Oct 20, 2016 4:55:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@61a1de53, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
+Read from stdout: CoffeeScript compiling on 1 source(s)
+CoffeeScript compiling on 1 source(s)
+Read from stdout: /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/assets/javascripts/index.coffee:55: unexpected //
+/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/assets/javascripts/index.coffee:55: unexpected //
+Read from stdout: //data.shift()
+    //data.shift()
+Read from stdout: ^
+    ^
+Read from stdout: one error found
+one error found
+Total time: 3 s, completed Oct 20, 2016 5:04:53 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@239a466c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
+	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
+Read from stdout: CoffeeScript compiling on 1 source(s)
+CoffeeScript compiling on 1 source(s)
+Total time: 2 s, completed Oct 20, 2016 5:05:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@59729454, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/StockActor.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/StockActor.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/app/actors/StockActor.scala)
+
+Read from stdout: Compiling 1 Scala source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
+Compiling 1 Scala source to /Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes...
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.7
+Other repositories:
+Default repositories:
+Running cached compiler 21a4df5a, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/classes:/Users/brycerich/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+	-classpath
+	/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes:/Users/brycerich/.ivy2/cache/com.typesafe.play/twirl-api_2.11/jars/twirl-api_2.11-1.1.1.jar:/Users/brycerich/.ivy2/cache/org.apache.commons/commons-lang3/jars/commons-lang3-3.4.jar:/Users/brycerich/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-server_2.11/jars/play-server_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play_2.11/jars/play_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/build-link/jars/build-link-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-exceptions/jars/play-exceptions-2.4.4.jar:/Users/brycerich/.ivy2/cache/org.javassist/javassist/bundles/javassist-3.19.0-GA.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-iteratees_2.11/jars/play-iteratees_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/org.scala-stm/scala-stm_2.11/jars/scala-stm_2.11-0.7.jar:/Users/brycerich/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-json_2.11/jars/play-json_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-functional_2.11/jars/play-functional_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-datacommons_2.11/jars/play-datacommons_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.8.1.jar:/Users/brycerich/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.7.jar:/Users/brycerich/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.6.jar:/Users/brycerich/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.4.jar:/Users/brycerich/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.4.jar:/Users/brycerich/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.4.jar:/Users/brycerich/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/bundles/jackson-datatype-jdk8-2.5.4.jar:/Users/brycerich/.ivy2/cache/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/bundles/jackson-datatype-jsr310-2.5.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-netty-utils/jars/play-netty-utils-2.4.4.jar:/Users/brycerich/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.12.jar:/Users/brycerich/.ivy2/cache/org.slf4j/jul-to-slf4j/jars/jul-to-slf4j-1.7.12.jar:/Users/brycerich/.ivy2/cache/org.slf4j/jcl-over-slf4j/jars/jcl-over-slf4j-1.7.12.jar:/Users/brycerich/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.1.jar:/Users/brycerich/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.1.3.jar:/Users/brycerich/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.3.jar:/Users/brycerich/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.13.jar:/Users/brycerich/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.11/jars/akka-slf4j_2.11-2.3.13.jar:/Users/brycerich/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar:/Users/brycerich/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.11.0.jar:/Users/brycerich/.ivy2/cache/xml-apis/xml-apis/jars/xml-apis-1.4.01.jar:/Users/brycerich/.ivy2/cache/javax.transaction/jta/jars/jta-1.1.jar:/Users/brycerich/.ivy2/cache/com.google.inject/guice/jars/guice-4.0.jar:/Users/brycerich/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar:/Users/brycerich/.ivy2/cache/aopalliance/aopalliance/jars/aopalliance-1.0.jar:/Users/brycerich/.ivy2/cache/com.google.inject.extensions/guice-assistedinject/jars/guice-assistedinject-4.0.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-netty-server_2.11/jars/play-netty-server_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/io.netty/netty/bundles/netty-3.10.4.Final.jar:/Users/brycerich/.ivy2/cache/com.typesafe.netty/netty-http-pipelining/jars/netty-http-pipelining-1.1.4.jar:/Users/brycerich/.ivy2/cache/com.typesafe.play/play-ws_2.11/jars/play-ws_2.11-2.4.4.jar:/Users/brycerich/.ivy2/cache/com.google.guava/guava/bundles/guava-18.0.jar:/Users/brycerich/.ivy2/cache/com.ning/async-http-client/jars/async-http-client-1.9.21.jar:/Users/brycerich/.ivy2/cache/oauth.signpost/signpost-core/jars/signpost-core-1.2.1.2.jar:/Users/brycerich/.ivy2/cache/oauth.signpost/signpost-commonshttp4/jars/signpost-commonshttp4-1.2.1.2.jar:/Users/brycerich/.ivy2/cache/org.apache.httpcomponents/httpcore/jars/httpcore-4.0.1.jar:/Users/brycerich/.ivy2/cache/org.apache.httpcomponents/httpclient/jars/httpclient-4.0.1.jar:/Users/brycerich/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.1.1.jar:/Users/brycerich/.ivy2/cache/org.webjars/bootstrap/jars/bootstrap-2.3.2.jar:/Users/brycerich/.ivy2/cache/org.webjars/jquery/jars/jquery-1.9.0.jar:/Users/brycerich/.ivy2/cache/org.webjars/flot/jars/flot-0.8.0.jar:/Users/brycerich/.ivy2/cache/org.webjars/jquery-colorhelpers/jars/jquery-colorhelpers-1.1.jar:/Users/brycerich/.ivy2/cache/org.webjars/explorercanvas/jars/explorercanvas-r3.jar
+Scala compilation took 10.245695677 s
 New invalidations:
 	Set()
 Initial set of included nodes: Set()
 Previously invalidated, but (transitively) depend on new invalidations:
 	Set()
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 2 s, completed Oct 19, 2016 4:01:50 PM
+Total time: 11 s, completed Oct 20, 2016 5:06:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@389fc9b5, check cycles: false
+
+Canceling execution...
+Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@4f3a9c27 rejected from java.util.concurrent.ThreadPoolExecutor@685cce49[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 12]
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.ExecutorCompletionService$QueueingFuture@4f3a9c27 rejected from java.util.concurrent.ThreadPoolExecutor@685cce49[Shutting down, pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 12]
+Use 'last' for the full log.
+> server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
 > jobStop 1
 Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@70acea48, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 4:01:50 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@b00114e, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 5:06:41 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@47bd5335, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 4:01:50 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@24160a95, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 5:06:42 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > test
 Evaluating tasks: test:test
-Running task... Cancel: sbt.server.ServerTaskCancellation@1acb5942, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@56e13ce7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -408,12 +405,12 @@ Framework implementation 'org.scalacheck.ScalaCheckFramework' not present.
 Framework implementation 'org.specs.runner.SpecsFramework' not present.
 Framework implementation 'org.scalatest.tools.Framework' not present.
 Framework implementation 'org.scalatest.tools.ScalaTestFramework' not present.
-Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@7c6a731c))
-Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@3ab40c35), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@1254d7bf))
+Subclass fingerprints: List((org.specs2.specification.core.SpecificationStructure,true,specs2 Specification fingerprint), (org.specs2.specification.core.SpecificationStructure,false,specs2 Specification fingerprint), (junit.framework.TestCase,false,com.novocode.junit.JUnit3Fingerprint@3acb20b3))
+Annotation fingerprints: List((org.junit.runner.RunWith,false,com.novocode.junit.RunWithFingerprint@47a54661), (org.junit.Test,false,com.novocode.junit.JUnitFingerprint@2408389e))
 Forking tests - parallelism = false
 Create a single-thread test executor
 Runner for org.specs2.runner.Specs2Framework produced 2 initial tasks for 2 tests.
-  Running TaskDef(actors.StockActorSpec, sbt.ForkMain$SubclassFingerscan@75a69adb, false, [SuiteSelector])
+  Running TaskDef(actors.StockActorSpec, sbt.ForkMain$SubclassFingerscan@54722574, false, [SuiteSelector])
 Read from stdout: StockActorSpec
 StockActorSpec
 Read from stdout: 
@@ -432,14 +429,14 @@ Read from stdout:
 
 Read from stdout: Total for specification StockActorSpec
 Total for specification StockActorSpec
-Read from stdout: Finished in 499 ms
+Read from stdout: Finished in 332 ms
 Read from stdout: 3 examples, 0 failure, 0 error
-Finished in 499 ms
+Finished in 332 ms
 3 examples, 0 failure, 0 error
 Read from stdout: 
 
     Produced 0 nested tasks and 3 events.
-  Running TaskDef(actors.UserActorSpec, sbt.ForkMain$SubclassFingerscan@7e5cc4ac, false, [SuiteSelector])
+  Running TaskDef(actors.UserActorSpec, sbt.ForkMain$SubclassFingerscan@726291b1, false, [SuiteSelector])
 Read from stdout: UserActorSpec
 UserActorSpec
 Read from stdout: 
@@ -456,19 +453,19 @@ Read from stdout:
 
 Read from stdout: Total for specification UserActorSpec
 Total for specification UserActorSpec
-Read from stdout: Finished in 2 seconds, 306 ms
+Read from stdout: Finished in 2 seconds, 41 ms
 Read from stdout: 2 examples, 0 failure, 0 error
-Finished in 2 seconds, 306 ms
+Finished in 2 seconds, 41 ms
 2 examples, 0 failure, 0 error
 Read from stdout: 
 
     Produced 0 nested tasks and 2 events.
 Runner for com.novocode.junit.JUnitFramework produced 1 initial tasks for 1 tests.
-  Running TaskDef(FakeStockQuoteTest, sbt.ForkMain$AnnotatedFingerscan@48d94e80, false, [SuiteSelector])
+  Running TaskDef(FakeStockQuoteTest, sbt.ForkMain$AnnotatedFingerscan@39bd99eb, false, [SuiteSelector])
 Test run started
 Test FakeStockQuoteTest.fakeStockPriceShouldBePlusOrMinusFivePercentOfTheOldPrice started
-Test FakeStockQuoteTest.fakeStockPriceShouldBePlusOrMinusFivePercentOfTheOldPrice finished, took 0.022 sec
-Test run finished: 0 failed, 0 ignored, 1 total, 0.027s
+Test FakeStockQuoteTest.fakeStockPriceShouldBePlusOrMinusFivePercentOfTheOldPrice finished, took 0.012 sec
+Test run finished: 0 failed, 0 ignored, 1 total, 0.019s
     Produced 0 nested tasks and 1 events.
 Summary for specs2 not available.
 Summary for JUnit not available.
@@ -478,24 +475,24 @@ Passed tests:
 	actors.UserActorSpec
 	FakeStockQuoteTest
 	actors.StockActorSpec
-Total time: 32 s, completed Oct 19, 2016 4:02:23 PM
+Total time: 20 s, completed Oct 20, 2016 5:07:02 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@396c1b73, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 4:02:23 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a6cfa1b, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 5:07:02 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@7fe4a61, check cycles: false
-Total time: 0 s, completed Oct 19, 2016 4:02:24 PM
+Running task... Cancel: sbt.server.ServerTaskCancellation@314afa45, check cycles: false
+Total time: 0 s, completed Oct 20, 2016 5:07:03 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@104dd28c, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1345c801, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -516,84 +513,6 @@ Copy resource mappings:
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
 	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Oct 19, 2016 4:04:51 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@5cf07a15, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
-Total time: 2 s, completed Oct 19, 2016 4:16:05 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@e61f0c3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Oct 19, 2016 4:16:35 PM
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@55352084, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/application.conf,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/application.conf)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/logback.xml,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/logback.xml)
-	(/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/conf/routes,/Users/brycerich/Desktop/Fall2016/ECE4012/SeniorDesign/RamblinTek/reactive-stocks/target/scala-2.11/classes/routes)
-Total time: 1 s, completed Oct 19, 2016 4:17:13 PM
+Total time: 1 s, completed Oct 20, 2016 5:07:06 PM
 > server-post-command-cleanup
 > server-handle-next-server-request

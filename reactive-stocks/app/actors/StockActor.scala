@@ -23,7 +23,7 @@ class StockActor(symbol: String) extends Actor {
   // A random data set which uses stockQuote.newPrice to get each data point
   var stockHistory: Queue[java.lang.Double] = {
     lazy val initialPrices: Stream[java.lang.Double] = (new Random().nextDouble * 800) #:: initialPrices.map(previous => stockQuote.newPrice(previous))
-    initialPrices.take(50).to[Queue]
+    initialPrices.take(1).to[Queue]
   }
   
   // Fetch the latest stock value every 75ms
@@ -33,7 +33,7 @@ class StockActor(symbol: String) extends Actor {
     case FetchLatest =>
       // add a new stock price to the history and drop the oldest
       val newPrice = stockQuote.newPrice(stockHistory.last.doubleValue())
-      stockHistory = stockHistory.drop(1) :+ newPrice
+      stockHistory = stockHistory :+ newPrice//.drop(1) :+ newPrice
       // notify watchers
       watchers.foreach(_ ! StockUpdate(symbol, newPrice))
     case WatchStock(_) =>

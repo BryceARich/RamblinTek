@@ -53,7 +53,7 @@ updateStockChart = (message) ->
   if ($("#" + message.symbol).size() > 0)
     plot = $("#" + message.symbol).data("plot")
     data = getPricesFromArray(plot.getData()[0].data)
-    data.shift()
+    #data.shift()
     data.push(message.price)
     plot.setData([getChartArray(data)])
     # update the yaxes if either the min or max is now out of the acceptable range
