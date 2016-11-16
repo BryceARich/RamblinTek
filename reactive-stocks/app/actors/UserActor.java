@@ -28,9 +28,6 @@ public class UserActor extends UntypedActor {
         for(int i = 0; i < defaultStocks.size(); ++i){
             StocksActor.stocksActor().tell(new WatchStock(defaultStocks.get(i)), getSelf());
         }
-        /*for (String stockSymbol : defaultStocks) {
-            StocksActor.stocksActor().tell(new WatchStock(stockSymbol), getSelf());
-        }*/
     }
     
     public void onReceive(Object message) {
