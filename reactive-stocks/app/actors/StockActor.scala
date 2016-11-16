@@ -22,7 +22,7 @@ class StockActor(symbol: String) extends Actor {
 
   // A random data set which uses stockQuote.newPrice to get each data point
   var stockHistory: Queue[java.lang.Double] = {
-    lazy val initialPrices: Stream[java.lang.Double] = (new Random().nextDouble * 800) #:: initialPrices.map(previous => stockQuote.newPrice(previous))
+    lazy val initialPrices: Stream[java.lang.Double] = (new Random().nextDouble * 20 + 70) #:: initialPrices.map(previous => stockQuote.newPrice(previous))
     initialPrices.take(1).to[Queue]
   }
   

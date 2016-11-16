@@ -21,7 +21,7 @@ getPricesFromArray = (data) ->
   (v[1] for v in data)
 
 getChartArray = (data) ->
-  ([i, v] for v, i in data)
+  ([.5*i, v] for v, i in data)
 
 getChartOptions = (data) ->
   series:
@@ -30,6 +30,8 @@ getChartOptions = (data) ->
     min: getAxisMin(data)
     max: getAxisMax(data)
   xaxis:
+    min: 0
+    max: 5000
     show: true
 
 getAxisMin = (data) ->
