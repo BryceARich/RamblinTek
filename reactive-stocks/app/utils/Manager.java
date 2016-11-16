@@ -12,6 +12,12 @@ import org.json.JSONObject;
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ *
+ *
+ * Solr cloud will have one table of sensors
+ *
+ */
 
 public class Manager {
     public String host;
@@ -21,6 +27,11 @@ public class Manager {
     public String ADD_JSON;
     public String QUERY_ALL;
     public long START_TIME;
+    public int sensor1StartTime = 0;
+    public int sensor2StartTime = 0;
+    public int sensor3StartTime = 0;
+    public int sensor4StartTime = 0;
+
 
     public Manager(String h, String p, String cN) {
         host = h;
@@ -41,7 +52,20 @@ public class Manager {
     }
 
 
-    public JSONObject addDoc(double id, int temp, int sensor) throws Exception{
+    public JSONObject addDoc(int temp, int sensor) throws Exception{
+
+        int id = 0;
+
+        if (sensor == 1) {
+            id = sensor1StartTime + 5000;
+        } else if (sensor == 2) {
+            id = sensor2StartTime + 5000;
+        } else if (sensor == 3) {
+            id = sensor3StartTime;
+        } else if (sensor == 4) {
+            id = sensor4StartTime;
+        }
+
 
         DefaultHttpClient httpClient = new DefaultHttpClient();
         HttpPost post = new HttpPost(ADD_JSON);
@@ -86,7 +110,7 @@ public class Manager {
                 new InputStreamReader(response.getEntity().getContent()));
 
         StringBuffer result = new StringBuffer();
-        String line = "";
+        String line;
         while ((line = rd.readLine()) != null) {
             result.append(line);
         }
@@ -97,28 +121,33 @@ public class Manager {
     }
 
 
-
-
     public static void main(String[] args) throws Exception{
-
 
         Manager manager = new Manager("localhost", "8983", "trial");
 
-        double currentTimeInMilliSeconds = (double) (System.nanoTime() - manager.START_TIME )/1000;
-        System.out.println(currentTimeInMilliSeconds);
-        manager.addDoc(5000, 35, 1);
-        manager.addDoc(10000, 36, 1);
-        manager.addDoc(15000, 37, 1);
-        manager.addDoc(20000, 38, 1);
-        manager.addDoc(25000, 37, 1);
-        manager.addDoc(30000, 36, 1);
+        //Call XBEE connection
+
+        /**
+         * while (connection is active && time is less than 25 minutes)
+         *     parseData(Xbee connection) -> return a pair of values [temp and sensor]
+         *     manager.addDoc(temp, sensor);
+         *
+         *     https://github.com/andrewrapp/xbee-api
+         */
+
+
+        manager.addDoc(35, 1);
+        manager.addDoc(36, 1);
+        manager.addDoc(37, 1);
+        manager.addDoc(38, 1);
+        manager.addDoc(37, 1);
+        manager.addDoc(36, 1);
 
         JSONArray arr = manager.getAllDocuments();
         for (int i = 0; i < arr.length();i++) {
             JSONObject o = (JSONObject) arr.get(i);
             System.out.println(o.toString());
         }
-
 
         System.out.println(arr.toString());
     }
