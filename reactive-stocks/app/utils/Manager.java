@@ -61,12 +61,12 @@ public class Manager {
         } else if (sensor == 2) {
             id = sensor2StartTime + 5000;
         } else if (sensor == 3) {
-            id = sensor3StartTime;
+            id = sensor3StartTime+ 5000;
         } else if (sensor == 4) {
-            id = sensor4StartTime;
+            id = sensor4StartTime + 5000;
         }
 
-
+/*
         DefaultHttpClient httpClient = new DefaultHttpClient();
         HttpPost post = new HttpPost(ADD_JSON);
 
@@ -76,7 +76,7 @@ public class Manager {
         post.setEntity(entity);
         HttpResponse response = httpClient.execute(post);
         System.out.println(response);
-
+*/
 
         JSONObject obj = new JSONObject("{\"id\": \" "+  id + " \",\"temp\":"+ temp +", \"sensor\":"+sensor+"}");
         return obj;
