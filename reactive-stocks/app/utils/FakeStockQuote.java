@@ -1,7 +1,6 @@
 package utils;
 
 import org.json.JSONObject;
-
 import java.util.Random;
 
 /**
@@ -15,10 +14,12 @@ public class FakeStockQuote implements StockQuote {
     int temp_right = 1000;
 
 
-    public Double newPrice(Double lastPrice) {
+    /*public Double newPrice(Double lastPrice) {
         // todo: this trends towards zero
+
         return lastPrice * (0.99  + (.02 * new Random().nextDouble())); // lastPrice * (0.99 to 1.02)
-    }
+
+    }*/
     public Double newPrice(String symbol){
         try {
             System.out.println(symbol);

@@ -34,6 +34,7 @@ public class Manager {
 
 
     public Manager(String h, String p, String cN) {
+        XbeeStream stream = new XbeeStream();
         host = h;
         port = p;
         collectionName = cN;

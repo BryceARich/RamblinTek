@@ -24,7 +24,7 @@ class StockActorSpec extends TestkitExample with SpecificationLike {
   final class StockActorWithStockQuote(symbol: String, price: Double, watcher: ActorRef) extends StockActor(symbol) {
     watchers = HashSet[ActorRef](watcher)
     override lazy val stockQuote = new StockQuote {
-      def newPrice(lastPrice: java.lang.Double): java.lang.Double = price
+      def newPrice(lastPrice: java.lang.String): java.lang.Double = price
     }
   }
 
