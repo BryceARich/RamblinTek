@@ -1,13 +1,13 @@
 package actors
 
+import java.lang.Double
+
 import akka.actor._
 import akka.testkit._
-
 import org.specs2.mutable._
 
 import scala.concurrent.duration._
 import scala.collection.immutable.HashSet
-
 import utils.StockQuote
 
 class StockActorSpec extends TestkitExample with SpecificationLike {
@@ -25,6 +25,8 @@ class StockActorSpec extends TestkitExample with SpecificationLike {
     watchers = HashSet[ActorRef](watcher)
     override lazy val stockQuote = new StockQuote {
       def newPrice(lastPrice: java.lang.String): java.lang.Double = price
+
+      override def firstPrice(lastPrice: Double): Double = price
     }
   }
 

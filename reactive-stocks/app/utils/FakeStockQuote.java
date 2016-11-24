@@ -20,6 +20,9 @@ public class FakeStockQuote implements StockQuote {
         return lastPrice * (0.99  + (.02 * new Random().nextDouble())); // lastPrice * (0.99 to 1.02)
 
     }*/
+    public Double firstPrice(Double symbol) {
+        return 0.0;
+    }
     public Double newPrice(String symbol){
         try {
             System.out.println(symbol);

@@ -9,6 +9,7 @@ scalaVersion := "2.11.7"
 // scalaz-bintray resolver needed for specs2 library
 resolvers += "scalaz-bintray" at "https://dl.bintray.com/scalaz/releases"
 resolvers += "maven" at "https://mvnrepository.com/artifact"
+resolvers += Resolver.mavenLocal
 
 libraryDependencies ++= Seq(
   ws, // Play's web services module
