@@ -27,8 +27,9 @@ getChartOptions = (data) ->
   series:
     shadowSize: 0
   yaxis:
-    min: getAxisMin(data)
-    max: getAxisMax(data)
+    min: 88
+    max: 122
+    label: "Temperature"
   xaxis:
     min: 0
     max: 5000
@@ -60,11 +61,11 @@ updateStockChart = (message) ->
     plot.setData([getChartArray(data)])
     # update the yaxes if either the min or max is now out of the acceptable range
     yaxes = plot.getOptions().yaxes[0]
-    if ((getAxisMin(data) < yaxes.min) || (getAxisMax(data) > yaxes.max))
+    #if ((getAxisMin(data) < yaxes.min) || (getAxisMax(data) > yaxes.max))
       # reseting yaxes
-      yaxes.min = getAxisMin(data)
-      yaxes.max = getAxisMax(data)
-      plot.setupGrid()
+      #yaxes.min = getAxisMin(data)
+      #yaxes.max = getAxisMax(data)
+      #plot.setupGrid()
     # redraw the chart
     plot.draw()
 
