@@ -1,5 +1,6 @@
 package utils;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import java.util.Random;
 
@@ -12,41 +13,49 @@ public class FakeStockQuote implements StockQuote {
     int temp_left = 1000;
     int temp_right = 1000;
     int temp_average = 500;
-
-
+    public static XbeeStream instance;
+    XbeeStream xbee = null;
     public Double firstPrice(Double symbol) {
         return 98.6;
     }
+    public void getManager() {
+        instance = XbeeStream.getInstance();
+    }
+
+
+
+
     public Double newPrice(String symbol){
-        Manager manager = null;
-        while (manager == null) {
-            manager = XbeeStream.getManager();
-        }
+        getManager();
+
         try {
-//            System.out.println(symbol);
-            //symbol = "x";
+            while (instance.manager == null) {
+                //System.out.println(symbol);
+                //manager.getAllDocuments();
+            }
+            //System.out.println(symbol + " " + instance.manager);
             if(symbol.equals("Chest")) {
                 //JSONObject json = man.addDoc((temp_chest++), 1);
 //                System.out.println(Double.parseDouble(json.get("temp").toString()));
                 //return Double.parseDouble(json.get("temp").toString());
-                return manager.getMostRecentChest();
+                return instance.manager.chestObj();
             }else if(symbol.equals("Left")) {
                 //JSONObject json = man.addDoc((temp_left++), 2);
 //                System.out.println(Double.parseDouble(json.get("temp").toString()));
                 //return Double.parseDouble(json.get("temp").toString());
-                return manager.getMostRecentLeft();
+                return instance.manager.leftObj();
             }else if(symbol.equals("Back")) {
                 //JSONObject json = man.addDoc((temp_back--), 3);
 //                System.out.println(Double.parseDouble(json.get("temp").toString()));
                 //return Double.parseDouble(json.get("temp").toString());
-                return manager.getMostRecentBack();
+                return instance.manager.backObj();
             }else if(symbol.equals("Right")) {
                 //JSONObject json = man.addDoc((temp_right--), 4);
 //                System.out.println(Double.parseDouble(json.get("temp").toString()));
                 //return Double.parseDouble(json.get("temp").toString());
-                return manager.getMostRecentRight();
-            } else if (symbol.equals("Average")) {
-                return manager.getMostRecentAverage();
+                return instance.manager.rightObj();
+            } else if(symbol.equals("Average")){
+                return instance.manager.averageObj();
             } else {
                 //JSONObject json = man.addDoc(0, 1);
 //                System.out.println(Double.parseDouble(json.get("temp").toString()));
@@ -54,9 +63,12 @@ public class FakeStockQuote implements StockQuote {
             }
             //return (double) (temp++);
         } catch (Exception e){
+            e.printStackTrace();
+            //System.out.println(e.getMessage());
             return 0.0;
         }
     }
+
 
     /**
      * public Double newPrice(String symbol) {

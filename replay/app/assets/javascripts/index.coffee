@@ -21,15 +21,14 @@ getPricesFromArray = (data) ->
   (v[1] for v in data)
 
 getChartArray = (data) ->
-  ([.5*i, v] for v, i in data)
+  ([0.5*i, v] for v, i in data)
 
 getChartOptions = (data) ->
   series:
     shadowSize: 0
   yaxis:
     min: 65
-    max: 85
-    labelString: 'Temperature'
+    max: 95
   xaxis:
     min: 0
     max: 5000

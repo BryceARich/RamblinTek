@@ -32,9 +32,11 @@ public class Manager {
     public int sensor2StartTime = 1;
     public int sensor3StartTime = 2;
     public int sensor4StartTime = 3;
+    public int sensor5StartTime = 4;
     public double lastLeft;
     public double lastRight;
     public double lastChest;
+    public double lastAverage;
     public double lastBack;
     public static final double DEFAULT_TEMP = 98.6;
 
@@ -69,6 +71,9 @@ public class Manager {
     public double getMostRecentRight() {
         return lastRight != 0 ? lastRight : DEFAULT_TEMP;
     }
+    public double getMostRecentAverage() {
+        return lastAverage != 0 ? lastAverage : DEFAULT_TEMP;
+    }
 
 
     public JSONObject addDoc(double temp, int sensor) throws Exception{ // need to make sure Solr recognizes this as a double
@@ -79,7 +84,8 @@ public class Manager {
          * 1 = Chest
          * 2 = Left
          * 3 = Back
-         * 4= Right
+         * 4 = Right
+         * 5 = Average
         */
         if (sensor == 1) {
             sensor1StartTime += 5000;
@@ -98,6 +104,10 @@ public class Manager {
             sensor4StartTime += 5000;
             id = sensor4StartTime;
             lastRight = temp;
+        } else if (sensor == 5) {
+            sensor5StartTime += 5000;
+            id = sensor5StartTime;
+            lastAverage = temp;
         }
 
 
@@ -170,12 +180,7 @@ public class Manager {
          */
 
 
-        manager.addDoc(35, 1);
-        manager.addDoc(36, 1);
-        manager.addDoc(37, 1);
-        manager.addDoc(38, 1);
-        manager.addDoc(37, 1);
-        manager.addDoc(36, 1);
+       
 
         JSONArray arr = manager.getAllDocuments();
         for (int i = 0; i < arr.length();i++) {

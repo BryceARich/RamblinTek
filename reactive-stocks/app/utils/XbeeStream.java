@@ -28,7 +28,7 @@ public class XbeeStream {
 
     public static void go() throws Exception {
         XBee xbee = new XBee();
-        manager = new Manager("localhost", "8983", "test");
+        manager = new Manager("localhost", "8983", "demo1");
         xbee.open("/dev/tty.usbserial-DN01IW76", 9600);
         System.out.println("Made it here");
         while (true) {
@@ -51,6 +51,7 @@ public class XbeeStream {
             int s1 = 0, s2 = 0, s3 = 0, s4 = 0, t = 0;
             Scanner scan = new Scanner(number);
             if (scan.hasNextInt()) {
+                System.out.println("had next int");
                 s1 = scan.nextInt();
                 s2 = scan.nextInt();
                 s3 = scan.nextInt();
@@ -60,12 +61,13 @@ public class XbeeStream {
                 //System.out.println("S1 = " + (int) scan.nextInt() + " S2 = " + (int) scan.nextInt() + " S3 = " + (int) scan.nextInt() + " S4 = " + (int) scan.nextInt() + " Time = " + (int) scan.nextInt() + "\n");
                 //System.out.println(number);
             }
-            if(allInRange(s1,s2,s3,s4)) {
+            //if(allInRange(s1,s2,s3,s4)) {
                 manager.addDoc(toFahrenheit(s1), 1);
                 manager.addDoc(toFahrenheit(s2), 2);
                 manager.addDoc(toFahrenheit(s3), 3);
                 manager.addDoc(toFahrenheit(s4), 4);
-            }
+                manager.addDoc(toFahrenheit((s1+s2+s3+s4)/4),5);
+            //}
 
             /*//math to convert from sensor reading to fahrenheit
             double resistance, voltage, celcius, fahrenheit;

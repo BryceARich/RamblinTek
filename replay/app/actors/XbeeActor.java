@@ -17,13 +17,6 @@ public class XbeeActor extends UntypedActor {
     }
 
     public void onReceive(Object message) {
-        System.out.println("Xbee Actor Received Message");
-        XbeeStream xbeeStream = new XbeeStream();
-        try {
-            System.out.println("Going");
-            xbeeStream.go();
-        } catch(Exception e){
-            return;
-        }
     }
+
 }
